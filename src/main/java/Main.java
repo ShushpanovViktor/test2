@@ -6,13 +6,17 @@ public class Main {
         LinkedList<Integer> linkedList = new LinkedList<>();
         Integer a = 1;
         Integer b = 2;
+        Integer c = 5;
 
         linkedList.add(a);
         linkedList.add(b);
+        linkedList.add(c);
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(a);
         arrayList.add(b);
+        arrayList.add(c);
+
 
         for (int i = 0; i < linkedList.size(); i++) {
             System.out.println(linkedList.get(i));
@@ -21,6 +25,25 @@ public class Main {
         for (int i = 0; i < arrayList.size(); i++) {
             System.out.println(arrayList.get(i));
         }
+
+        System.out.println("");
+
+        linkedList.remove(a);
+        arrayList.remove(c);
+
+        for (int i = 0; i < linkedList.size(); i++) {
+            System.out.println(linkedList.get(i));
+        }
+
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i));
+        }
+
+        System.out.println("");
+
+        System.out.println(linkedList.contains(b));
+        System.out.println(arrayList.contains(c));
+
     }
 
 }
